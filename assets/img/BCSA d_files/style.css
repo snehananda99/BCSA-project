@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|Poppins:300,400,500,600,700,800,900");
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg-info2{background: #fdc735;}
+.bg-danger2{background: #dd127b;}
+.bg-success2{background: #10c45c;}
+.bg-primary2{background: #0093dd;}
+.bg-secondary2{background: #e2e2e2;}
+.text-danger2{color: #dd127b;}
+.text-primary2{color: #0093dd;}
+.fw-4{font-weight: 400;}
+.fw-5{font-weight: 500;}
+.fw-6{font-weight: 600;}
+.fw-7{font-weight: 700;}
+.fs-12{font-size: 12px;}
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.body{font-family: "roboto", sans-serif;}
+h3{color: #dd127b;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+P{font-family: "roboto", sans-serif;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.4px;}
+a{font-family: "roboto", sans-serif;
+  text-decoration: none;}
+a:hover{color: #dd127b !important;
+        transform: scale(1.03);
+        transition: all 0.2s;}
+.btn:hover{background: #000000;}
+/*Top head start*/
+.tophead-text a:hover{
+    color: #0093dd !important;
+}
+/*Top head End*/
+/* Header Section Start */
+    .dropdown:hover .dropdown-menu{display: block;}
+    .dropdown .dropdown-item:hover{background: none;}
+    @media all and (max-width:575px){
+        .navbar-brand .logo1{display: none;}
+    }
+/* Header Section End */
+
+/* Banner Section Start */
+.carousel-indicators [data-bs-target]{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #dd127b;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 8%;
+    opacity: 0.9;
+}
+.carousel-item .carousel-caption{
+    top: 40%;
+    left: 9%;
+    right:9%;
+    text-align: left;
+    color: #dd127b !important;
+}
+.breadcrumb{
+    height: 350px;
+    line-height: 350px;
+    justify-content: center;
+}
+/*
+@media all and (min-width:425px){
+    .breadcrumb{
+        height:200px
+        line-height:200px;
+    }
+}*/
+/* Banner Section End */
+
+/* Search Registration Section Start */
+/* Certificate Registration Start */
+@media all and (min-width:768px){
+    #form{
+        width:40%;        
+    }
+}
+/* Certificate Registration End */
+/* Search Registration Section End  */
+
+ /* Courses Enquiry Section Start*/
+.address-info{
+    padding: 0px 30px;
+    border-radius: 15px;
+    border-top: 4px solid #0093dd;
+    border-bottom: 4px solid #0093dd;
+    box-shadow: 0px 0px 3px 1px #ccc;
+}
+.add-icon a{
+    font-size: 25px;
+    color: #0093dd;
+    padding:12px 17px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px #ccc;
+}
+.add-icon a:hover{background: #0093dd;}
+
+/* Courses Enquiry Section End */
+
+/* Footer Section Start */
+.social-media li{
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius:50%;
+    text-align: center;
+    background-color: #0093dd;
+    box-shadow: 0px 0px 3px 1px #0093dd;
+}
+.social-media li:hover{
+    font-weight: bold;
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+/* Footer Section End */
+.bordernone:focus{
+    border: none;
+}
+
+/*Css for mobile start*
+@media all and (max-width: 425px){
+     #texts h5, .carousel-indicators button, .carousel-control-prev-icon ,.carousel-control-next-icon{
+            display:none;
+        }
+    .carousel-inner .carousel-item img{
+            height:220px;
+    }
+/*Css for mobile end*/
+
+/*Gallery css section start*
+.album{
+    background-color: pink;
+}
+.container .image-containerr{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: center;
+    padding: 10px;
+}
+.image-containerr .imagee{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgb(0,0,0,.1);
+    overflow: hidden;
+}
+.image-containerr .imagee img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.image-containerr .imagee:hover img{
+    transform: scale(1.1);
+}
+.popup-image{
+    position:fixed;
+    top:0; left:0px;
+    background-color: rgb(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    cursor: pointer;
+}
+.popup-image{
+    position: absolute;
+    top:10%; right: 0px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    z-index: 100;
+    display: none;
+    cursor: pointer;
+}
+.popup-image span{
+    position: absolute;
+    top: 7%; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    z-index: 100;
+}
+.popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    width: 750px;
+    object-fit: cover;
+}
+@media (max-width:768px){
+    .popup-image img{
+        width: 88%;        
+    }
+    .popup-image span{
+        font-size: 40px;
+        top: 11%; right: 10px;
+    }
+}
+/*Gallery css section end*/
